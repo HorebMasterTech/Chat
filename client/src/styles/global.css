@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family:'Jost', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#theme {
+  display: none;
+}
+#theme:checked ~ * {
+  filter: invert(1);
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(240, 240, 240);
+}
+
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* -------- AUTH ---------- */
+@import url("./auth.css");
+
+/* -------- LOADING ---------- */
+@import url("./loading.css");
+
+/* -------- Header ---------- */
+@import url("./header.css");
+
+/* -------- Avatar ---------- */
+@import url("./avatar.css");
+
+/* -------- Header ---------- */
+@import url("./header.css");
+
+/* -------- Profile ---------- */
+@import url("./profile.css");
+
+/* -------- Home ---------- */
+@import url("./home.css");
+
+/* -------- Status Modal ---------- */
+@import url("./status_modal.css");
+
+/* -------- Comments ---------- */
+@import url("./comments.css");
+
+/* -------- Post Thumb ---------- */
+@import url("./post_thumb.css");
+
+/* -------- Message---------- */
+@import url("./message.css");
+
+/* -------- Icons---------- */
+@import url("./icons.css");
+
+/* -------- Call Modal---------- */
+@import url("./call_modal.css");
+
+
+
+/* --------- Responsive ------ */
+@media (max-width: 991px){
+.header .navbar a.logo {
+  display: none;
+}
+.header .navbar {
+  display: flex;
+  flex-direction: column;
+}
+.header .navbar .menu {
+  width: 100%;
+}
+.header .navbar .menu ul.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.message_header input {
+  font-size: 80%;
+}
+}
+@media (max-width: 768px){
+.header .search_form .search_icon{
+  font-size: 12px;
+}
+.header .search_form {
+  position: relative;
+  width: auto !important;
+}
+.message .col-md-9.px-0 {
+  width: 100%;
+}
+}
+
+@media (max-width: 766px){
+  .header .navbar .logo{
+    display: none;
+  }
+  .header .menu{
+      width: 100%;
+      height: 40px;
+  }
+  .header .menu .navbar-nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  .header .search_form{
+      width: 100%;
+  }
+  .header .logo{
+      margin: auto;
+  }
+  .header .logo h1{
+      font-size: 1.5rem;
+  }
+  
+  .message{
+    height: calc(100vh - 100px);
+  }
+  .right_mess,
+  .left_mess{
+    display: none;
+  }
+  .status{
+    padding: 20px 10px;
+  }
+}
+
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-evenly !important;
+}
+
+.mode{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* .auth_page .formulaire_global .btn-primary, .info_content .info_content_title .btn-primary {
+  background-color: #c5a546!important
+
+} */
+
+/* .btn-primary{
+  background-color: #c5a546!important;
+} */
+
+.btn-dark{
+  background-color: rgb(23, 23, 23)!important;
+}
+
+.bouton.btn-primary {
+  background-color: #122556 !important;
+  border-radius: 5px !important;
+}
+
+.hide {
+  display: none!important;
+}
+
+.form_group .react-input-emoji--input {
+  border-radius: 5px !important;
+  height: 90px !important;
+}
+
+.form_group .react-input-emoji--container {
+  border-radius: 5px !important;
+    border-color: #bdbdbd !important;
+    font-family: 'Jost', sans-serif !important;
+    margin-left: 0 !important;
+    color: black !important;
+    font-weight: 400 !important;
+}
+
+.form_group .react-input-emoji--button {
+  position: absolute !important;
+  right: 0 !important;
+  z-index: 9 !important;
+}
+
+.forMobile{
+  display: none !important;
+}
+
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+}
+
+
+
+*:focus {
+  box-shadow:none !important;
+}
+
+/* 
+.mt-20 {
+  margin-top: 70px !important;
+}
+
+.pt-20{
+  padding-top: 70px !important;
+}
+
+.pb-20{
+  padding-bottom: 70px !important;
+} */
+
+.card .react-emoji-picker--wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 250px !important;
+  width: 355px !important;
+  overflow: hidden;
+  z-index: 10;
+}
+

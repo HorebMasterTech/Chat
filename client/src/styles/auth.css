@@ -1,0 +1,20 @@
+.auth_page{
+    min-height: 100vh;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth_page .pass{
+    position: relative;
+}
+
+.auth_page .pass small{
+    position: absolute;
+    top: 70%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.5;
+}
